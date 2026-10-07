@@ -1,4 +1,4 @@
-.drinkList {
+/* .drinkList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
@@ -9,4 +9,133 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+} */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+}
+
+header {
+  background-color: #153374;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  /* border-bottom: 8px solid #f6d98b; */
+  border-radius: 18px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+header p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #2d4059;
+}
+.drinkList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.drinkCard {
+  background-color: white;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  /* margin: 1rem; */
+  border: 2px solid #153374;
+  border-radius: 18px;
+}
+
+/* .drinkCard:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.drinkCard:active {
+  transform: translateY(0);
+  transition: transform 0.1s;
+} */
+
+.drinkCard h2 {
+  margin-top: 0;
+  color: #3488c7;
+}
+
+.drinkCard p {
+  line-height: 1.5;
+}
+
+.drinkCard button {
+  background-color: #4aa3df;
+  color: white;
+  border: 2px solid #153374;
+  border-radius: 18px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.drinkCard button:hover {
+  background-color: #3488c7;
+}
+
+.yourOrder {
+  background-color: white;
+  padding: 20px;
+  border: 3px solid #f6d98b;
+  border-radius: 18px;
+  /* box-shadow: 0 5px 0 #d9edf7; */
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.clear {
+  background-color: #ffe59f;
+  color: #3488c7;
+  border: 2px solid #3488c7;
+  border-radius: 18px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.75rem;
+  transition: background-color 0.3s;
+}
+
+.clear:hover {
+  background-color: #3488c7;
+  color: white;
+  border: 2px solid #153374;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #153374;
+}
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #153374;
+  margin-bottom: 10px;
 }

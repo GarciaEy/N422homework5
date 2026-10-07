@@ -33,14 +33,16 @@ function App() {
         ) : (
           <>
             {order.map((drink) => (
-              <div key={drink.id}>
+              <div className="orderItem" key={drink.id}>
                 {drink.name} - ${drink.price.toFixed(2)}
               </div>
             ))}
             <p>Items in order: {order.length}</p>
             <p>OrderTotal: ${total.toFixed(2)}</p>
 
-            <button onClick={() => setOrder([])}>Clear Order</button>
+            <button className="clear" onClick={() => setOrder([])}>
+              Clear Order
+            </button>
           </>
         )}
       </div>
